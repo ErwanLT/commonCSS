@@ -91,14 +91,39 @@
     border-color: #007bff;
 }
 
+.solid-outline-primary:hover{
+    border-color: transparent;
+    background-color: #007bff;
+    color: white;
+}
+
 .solid-outline-danger {
     border-color: #FF5D5D;
+}
+
+.solid-outline-danger:hover{
+    border-color: transparent;
+    background-color: #FF5D5D;
+    color: white;
 }
 
 .solid-outline-warning {
     border-color: #e68a00;
 }
 
+.solid-outline-warning:hover{
+    border-color: transparent;
+    background-color: #e68a00;
+    color: white;
+}
+
 .solid-outline-ok {
     border-color: #2eb82e;
 }
+
+.solid-outline-ok:hover{
+    border-color: transparent;
+    background-color: #2eb82e;
+    color: white;
+}
+
