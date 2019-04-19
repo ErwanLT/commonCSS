@@ -1,3 +1,5 @@
+@import "common.css";
+
 body {
     margin: 0;
 }
@@ -6,26 +8,24 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 25%;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+    overflow: hidden;
+    background-color: #b6b6b6;
+}
+
+.navbar ul li {
+    float: left;
+    border-right: 1px solid #555;
 }
 
 .navbar ul li a {
     display: block;
-    color: #000;
-    padding: 8px 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
-.navbar ul li a.active {
-    background-color: #3e61af;
-    color: white;
-}
-
-.navbar ul li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
+/* Change the link color to #111 (black) on hover */
+.navbar ul li a:hover {
+    background-color: var(--primary-blue);
 }
