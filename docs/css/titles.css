@@ -1,6 +1,6 @@
 @import "common.css";
 
-h1{
+.title-1{
     font-size: 32px;
     color: var(--primary-blue,#205aaf);
     padding:5px;
@@ -8,7 +8,7 @@ h1{
     text-align:left;
 }
 
-h2{
+.title-2{
     font-size: 28px;
     color: var(--secondary-blue, #6e8ecd);
     padding:10px;

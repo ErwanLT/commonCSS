@@ -3,44 +3,63 @@
     <link rel="stylesheet" href="./css/buttons.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/titles.css" />
+    <link rel="stylesheet" href="./css/accordion.css" />
 </head>
 <body>
 
-<div class="navbar">
+<nav class="navbar">
     <ul>
         <li><a href="">Buttons</a></li>
     </ul>
-</div>
+</nav>
 
 
 <div>
 
-    <h1>The Button Element</h1>
-    <h2>No css</h2>
-    <button type="button">button</button>
+    <button class="title-1 accordion">The Button Element</button>
+    <div class="panel">
+        <h2 class="title-2">No css</h2>
+        <button type="button">button</button>
 
-    <h2>Minimal css</h2>
-    <button class="btn" type="button">btn</button>
+        <h2 class="title-2">Minimal css</h2>
+        <button class="btn" type="button">btn</button>
 
-    <h2>Full colored buttons</h2>
-    <button class="btn btn-primary" type="button">btn-primary</button>
-    <button class="btn btn-danger" type="button">btn-danger</button>
-    <button class="btn btn-warning" type="button">btn-warning</button>
-    <button class="btn btn-ok" type="button">btn-ok</button>
-    <button class="btn btn-gradient" type="button">btn-gradient</button>
-    <button class="btn btn-gradient gradient-right-blue-red" type="button">btn-gradient right-blue-red</button>
-    <button class="btn btn-gradient gradient-left-blue-red" type="button">btn-gradient left-blue-red</button>
-    <button class="btn btn-gradient gradient-linear-blue-red" type="button">btn-gradient linear-blue-red</button>
-    <button class="btn btn-gradient gradient-rainbow" type="button">btn rainbow</button>
+        <h2 class="title-2">Full colored buttons</h2>
+        <button class="btn btn-primary" type="button">btn-primary</button>
+        <button class="btn btn-danger" type="button">btn-danger</button>
+        <button class="btn btn-warning" type="button">btn-warning</button>
+        <button class="btn btn-ok" type="button">btn-ok</button>
+        <button class="btn btn-gradient" type="button">btn-gradient</button>
+        <button class="btn btn-gradient gradient-right-blue-red" type="button">btn-gradient right-blue-red</button>
+        <button class="btn btn-gradient gradient-left-blue-red" type="button">btn-gradient left-blue-red</button>
+        <button class="btn btn-gradient gradient-linear-blue-red" type="button">btn-gradient linear-blue-red</button>
+        <button class="btn btn-gradient gradient-rainbow" type="button">btn rainbow</button>
 
-    <h2>solid-outline colored buttons</h2>
-    <button class="btn solid-outline-primary" type="button">solid-outline-primary</button>
-    <button class="btn solid-outline-danger" type="button">solid-outline-danger</button>
-    <button class="btn solid-outline-warning" type="button">solid-outline-warning</button>
-    <button class="btn solid-outline-ok" type="button">solid-outline-ok</button>
-
+        <h2 class="title-2">solid-outline colored buttons</h2>
+        <button class="btn solid-outline-primary" type="button">solid-outline-primary</button>
+        <button class="btn solid-outline-danger" type="button">solid-outline-danger</button>
+        <button class="btn solid-outline-warning" type="button">solid-outline-warning</button>
+        <button class="btn solid-outline-ok" type="button">solid-outline-ok</button>
+    </div>
 
 </div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
 
 </body>
 </html>
