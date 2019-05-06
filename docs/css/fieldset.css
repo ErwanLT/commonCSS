@@ -1,6 +1,6 @@
 .fields{
     border-radius:8px;
-    border:2px solid;
+    border:2px solid var(--primary-blue);
 }
 
 .legend1{
