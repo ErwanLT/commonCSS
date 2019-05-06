@@ -30,7 +30,10 @@
 }
 
 .panel {
-    padding: 0 18px;
+    padding-top: 0;
+    padding-right: 18px;
+    padding-left: 18px;
+    padding-bottom: 5px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
