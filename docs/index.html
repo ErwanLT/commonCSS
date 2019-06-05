@@ -15,6 +15,7 @@
         <li><a href="#colorSection">Colors</a></li>
         <li><a href="#buttonSection">Buttons</a></li>
         <li><a href="#fieldSetSection">FieldSet</a></li>
+        <li><a href="#protectedSection">Protected</a></li>
     </ul>
 </nav>
 
@@ -28,44 +29,54 @@
                 <tr>
                     <th>color name</th>
                     <th>color</th>
+                    <th>code</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>--main-bg-color</td>
                     <td style="background-color: #ededed"></td>
+                    <td>#ededed</td>
                 </tr>
                 <tr>
                     <td>--primary-blue</td>
                     <td style="background-color: #00a1ff"></td>
+                    <td>#00a1ff</td>
                 </tr>
                 <tr>
                     <td>--secondary-blue</td>
                     <td style="background-color: #7aceff"></td>
+                    <td>#7aceff</td>
                 </tr>
                 <tr>
                     <td>--primary-red</td>
                     <td style="background-color: #FF5D5D"></td>
+                    <td>#FF5D5D</td>
                 </tr>
                 <tr>
                     <td>--secondary-red</td>
                     <td style="background-color: #930101"></td>
+                    <td>#930101</td>
                 </tr>
                 <tr>
                     <td>--primary-green</td>
                     <td style="background-color: #2EB82E"></td>
+                    <td>#2EB82E</td>
                 </tr>
                 <tr>
                     <td>--secondary-green</td>
                     <td style="background-color: #0A290A"></td>
+                    <td>#0A290A</td>
                 </tr>
                 <tr>
                     <td>--primary-orange</td>
                     <td style="background-color: #E68A00"></td>
+                    <td>#E68A00</td>
                 </tr>
                 <tr>
                     <td>--secondary-orange</td>
                     <td style="background-color: #331A00"></td>
+                    <td>#331A00</td>
                 </tr>
             </tbody>
         </table>
@@ -114,6 +125,17 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis, lorem sed feugiat volutpat, sapien dolor tempor quam, vel varius felis arcu ac ante. Nam maximus condimentum neque at congue. Phasellus sit amet pellentesque metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in elit neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent dapibus mauris ut aliquam facilisis. Proin eget mi elit. Proin vulputate, nisi a fermentum fermentum, augue ligula aliquet nisl, ac iaculis ipsum felis at leo. Nunc vel libero risus. Integer aliquet tempor ullamcorper. Etiam et augue vel neque egestas laoreet. Fusce gravida sapien erat, id sagittis tortor bibendum a. Sed tristique non lectus at consequat. Proin varius libero quis fringilla sagittis. Sed condimentum erat a tempor fermentum.
             </p>
         </fieldset>
+    </div>
+
+    <button class="accordion" name="fieldSetSection" id="protectedSection">Protected</button>
+    <div class="panel">
+        <div>
+            <p>The text of this div element can be selected.</p>
+
+        </div>
+        <div class="protected">
+            <p>The text of this div element cannot be selected. If you double-click me, my text will not be highlighted.</p>
+        </div>
     </div>
 
 </div>

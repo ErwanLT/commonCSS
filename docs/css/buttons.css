@@ -1,131 +1,118 @@
-@import "common.css";
+body {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.protected {
+  -webkit-user-select: none;
+  /* Safari 3.1+ */
+  -moz-user-select: none;
+  /* Firefox 2+ */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Standard syntax */ }
 
 .btn {
-    display: inline-block;
-    font-weight: 400;
-    color: #212529;
-    text-align: center;
-    vertical-align: middle;
-    user-select: none;
-    background-color: transparent;
-    border: 2px solid;
-    padding: .375rem .75rem .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 20px;
-}
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: 2px solid;
+  padding: .375rem .75rem .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 20px; }
 
 .btn:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
 
 .btn-primary {
-    color: #fff;
-    background-color: var(--primary-blue, #007bff);
-    border-color: var(--primary-blue, #007bff);
-}
+  color: #fff;
+  background-color: #00a1ff;
+  border-color: #00a1ff; }
 
 .btn-primary:hover {
-    background-color: white;
-    color: var(--primary-blue, #007bff);
-}
+  background-color: white;
+  color: #00a1ff; }
 
 .btn-danger {
-    color: var(--secondary-red,#930101);
-    background-color: var(--primary-red, #FF5D5D);
-    border-color: var(--primary-red, #FF5D5D);
-}
+  color: #930101;
+  background-color: #FF5D5D;
+  border-color: #FF5D5D; }
 
 .btn-danger:hover {
-    background-color: white;
-    color: var(--primary-red, #FF5D5D);
-}
+  background-color: white;
+  color: #FF5D5D; }
 
 .btn-warning {
-    color: var(--secondary-orange,#331a00);
-    background-color: var(--primary-orange,#e68a00);
-    border-color: var(--primary-orange,#e68a00);
-}
+  color: #331A00;
+  background-color: #E68A00;
+  border-color: #E68A00; }
 
 .btn-warning:hover {
-    background-color: white;
-    color: var(--primary-orange,#e68a00);
-}
+  background-color: white;
+  color: #E68A00; }
 
 .btn-ok {
-    color: var(--secondary-green,#0a290a);
-    background-color: var(--primary-green,#2eb82e);
-    border-color: var(--primary-green,#2eb82e);
-}
+  color: #0A290A;
+  background-color: #2EB82E;
+  border-color: #2EB82E; }
 
 .btn-ok:hover {
-    background-color: white;
-    color: var(--primary-green,#2eb82e);
-}
+  background-color: white;
+  color: #2EB82E; }
 
 .btn-gradient {
-    color: black;
-    border: 2px;
-    border-color: transparent;
-    background-image:linear-gradient(0deg, black,white);
-}
+  color: black;
+  border: 2px;
+  border-color: transparent;
+  background-image: linear-gradient(0deg, black, white); }
 
 .gradient-right-blue-red {
-    color: white;
-    background-image:linear-gradient(to right, var(--primary-blue, blue),var(--primary-red, red));
-}
+  color: white;
+  background-image: linear-gradient(to right, #00a1ff, #FF5D5D); }
 
 .gradient-left-blue-red {
-    color: white;
-    background-image:linear-gradient(to left, var(--primary-blue, blue),var(--primary-red, red));
-}
+  color: white;
+  background-image: linear-gradient(to left, #00a1ff, #FF5D5D); }
 
 .gradient-linear-blue-red {
-    color: white;
-    background-image:linear-gradient(135deg, var(--primary-blue, blue),var(--primary-red, red));
-}
+  color: white;
+  background-image: linear-gradient(135deg, #00a1ff, #FF5D5D); }
 
 .gradient-rainbow {
-    background: linear-gradient(to right, var(--primary-red, red), var(--primary-orange, orange), yellow, var(--primary-green, green), var(--primary-blue, blue), indigo, violet);
-}
+  background: linear-gradient(to right, #FF5D5D, #E68A00, yellow, #2EB82E, #00a1ff, indigo, violet); }
 
 .solid-outline-primary {
-    border-color: var(--primary-blue, #007bff);
-}
+  border-color: #00a1ff; }
 
-.solid-outline-primary:hover{
-    border-color: transparent;
-    background-color: var(--primary-blue, #007bff);
-    color: white;
-}
+.solid-outline-primary:hover {
+  border-color: transparent;
+  background-color: #00a1ff;
+  color: white; }
 
 .solid-outline-danger {
-    border-color: var(--primary-red, #FF5D5D);
-}
+  border-color: #FF5D5D; }
 
-.solid-outline-danger:hover{
-    border-color: transparent;
-    background-color: var(--primary-red, #FF5D5D);
-    color: white;
-}
+.solid-outline-danger:hover {
+  border-color: transparent;
+  background-color: #FF5D5D;
+  color: white; }
 
 .solid-outline-warning {
-    border-color: var(--primary-orange,#e68a00);
-}
+  border-color: #E68A00; }
 
-.solid-outline-warning:hover{
-    border-color: transparent;
-    background-color: var(--primary-orange,#e68a00);
-    color: white;
-}
+.solid-outline-warning:hover {
+  border-color: transparent;
+  background-color: #E68A00;
+  color: white; }
 
 .solid-outline-ok {
-    border-color: var(--primary-green,#2eb82e);
-}
+  border-color: #2EB82E; }
 
-.solid-outline-ok:hover{
-    border-color: transparent;
-    background-color: var(--primary-green,#2eb82e);
-    color: white;
-}
-
+.solid-outline-ok:hover {
+  border-color: transparent;
+  background-color: #2EB82E;
+  color: white; }

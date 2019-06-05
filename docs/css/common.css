@@ -1,15 +1,12 @@
-:root {
-    --main-bg-color : #ededed;
-    --primary-blue : #00a1ff;
-    --secondary-blue : #7aceff;
-    --primary-red : #FF5D5D;
-    --secondary-red : #930101;;
-    --primary-green : #2EB82E;
-    --secondary-green : #0A290A;
-    --primary-orange : #E68A00;
-    --secondary-orange : #331A00;
-}
-
 body {
-    font-family: Arial, Helvetica, sans-serif
-}
+  font-family: Arial, Helvetica, sans-serif; }
+
+.protected {
+  -webkit-user-select: none;
+  /* Safari 3.1+ */
+  -moz-user-select: none;
+  /* Firefox 2+ */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Standard syntax */ }

@@ -1,17 +1,26 @@
-@import "common.css";
+body {
+  font-family: Arial, Helvetica, sans-serif; }
 
-.title-1{
-    font-size: 32px;
-    color: var(--primary-blue,#205aaf);
-    padding:5px;
-    font-weight:lighter;
-    text-align:left;
-}
+.protected {
+  -webkit-user-select: none;
+  /* Safari 3.1+ */
+  -moz-user-select: none;
+  /* Firefox 2+ */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Standard syntax */ }
 
-.title-2{
-    font-size: 28px;
-    color: var(--secondary-blue, #6e8ecd);
-    padding:10px;
-    font-weight:lighter;
-    text-align:left;
-}
+.title-1 {
+  font-size: 32px;
+  color: #00a1ff;
+  padding: 5px;
+  font-weight: lighter;
+  text-align: left; }
+
+.title-2 {
+  font-size: 28px;
+  color: #7aceff;
+  padding: 10px;
+  font-weight: lighter;
+  text-align: left; }

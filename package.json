@@ -1,0 +1,29 @@
+{
+  "name": "commoncss",
+  "version": "1.0.0",
+  "description": "simple css library",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass docs/scss -o docs/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErwanLT/commonCSS.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "eletutour",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErwanLT/commonCSS/issues"
+  },
+  "homepage": "https://github.com/ErwanLT/commonCSS#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
