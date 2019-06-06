@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="./css/titles.css" />
     <link rel="stylesheet" href="./css/accordion.css" />
     <link rel="stylesheet" href="./css/fieldset.css" />
+    <link rel="stylesheet" href="./css/div.css">
 
     <script src="./js/commonJs.js"></script>
 </head>
@@ -16,6 +17,7 @@
         <li><a href="#buttonSection">Buttons</a></li>
         <li><a href="#fieldSetSection">FieldSet</a></li>
         <li><a href="#protectedSection">Protected</a></li>
+        <li><a href="#divSection">Div</a></li>
     </ul>
 </nav>
 
@@ -39,42 +41,62 @@
                     <td>#ededed</td>
                 </tr>
                 <tr>
-                    <td>--primary-blue</td>
+                    <td>$primary-blue</td>
                     <td style="background-color: #00a1ff"></td>
                     <td>#00a1ff</td>
                 </tr>
                 <tr>
-                    <td>--secondary-blue</td>
+                    <td>$secondary-blue</td>
                     <td style="background-color: #7aceff"></td>
                     <td>#7aceff</td>
                 </tr>
                 <tr>
-                    <td>--primary-red</td>
+                    <td>$tertiary-blue</td>
+                    <td style="background-color: #002080"></td>
+                    <td>#002080</td>
+                </tr>
+                <tr>
+                    <td>$primary-red</td>
                     <td style="background-color: #FF5D5D"></td>
                     <td>#FF5D5D</td>
                 </tr>
                 <tr>
-                    <td>--secondary-red</td>
-                    <td style="background-color: #930101"></td>
-                    <td>#930101</td>
+                    <td>$secondary-red</td>
+                    <td style="background-color: #cc0000"></td>
+                    <td>#cc0000</td>
                 </tr>
                 <tr>
-                    <td>--primary-green</td>
+                    <td>$tertiary-red</td>
+                    <td style="background-color: #990000"></td>
+                    <td>#990000</td>
+                </tr>
+                <tr>
+                    <td>$primary-green</td>
                     <td style="background-color: #2EB82E"></td>
                     <td>#2EB82E</td>
                 </tr>
                 <tr>
-                    <td>--secondary-green</td>
+                    <td>$secondary-green</td>
+                    <td style="background-color: #008000"></td>
+                    <td>#008000</td>
+                </tr>
+                <tr>
+                    <td>$tertiary-green</td>
                     <td style="background-color: #0A290A"></td>
                     <td>#0A290A</td>
                 </tr>
                 <tr>
-                    <td>--primary-orange</td>
-                    <td style="background-color: #E68A00"></td>
-                    <td>#E68A00</td>
+                    <td>$primary-orange</td>
+                    <td style="background-color: #ffad33"></td>
+                    <td>#ffad33</td>
                 </tr>
                 <tr>
-                    <td>--secondary-orange</td>
+                    <td>$secondary-orange</td>
+                    <td style="background-color: #b36b00"></td>
+                    <td>#b36b00</td>
+                </tr>
+                <tr>
+                    <td>$tertiary-orange</td>
                     <td style="background-color: #331A00"></td>
                     <td>#331A00</td>
                 </tr>
@@ -135,6 +157,23 @@
         </div>
         <div class="protected">
             <p>The text of this div element cannot be selected. If you double-click me, my text will not be highlighted.</p>
+        </div>
+    </div>
+
+    <button class="accordion" name="divSection" id="divSection">Div</button>
+    <div class="panel">
+        <br>
+        <div class="notice info">
+            <p>info</p>
+        </div>
+        <div class="notice warning">
+            <p>warning</p>
+        </div>
+        <div class="notice alert">
+            <p>alert</p>
+        </div>
+        <div class="notice success">
+            <p>success</p>
         </div>
     </div>
 

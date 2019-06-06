@@ -1,0 +1,50 @@
+@import "common";
+
+div {
+  .notice{
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  .info {
+    background-color: $secondary-blue;
+    border-radius:8px;
+    border:2px solid $primary-blue;
+    color: $primary-blue;
+    a {
+      color: $tertiary-blue;
+    }
+  }
+
+  .warning {
+    background-color: $primary-orange;
+    border-radius:8px;
+    border:2px solid $secondary-orange;
+    color: $secondary-orange;
+    a {
+      color: $tertiary-orange;
+    }
+  }
+
+  .alert {
+    background-color: $primary-red;
+    border-radius:8px;
+    border:2px solid $secondary-red;
+    color: $secondary-red;
+    a {
+      color: $tertiary-red;
+    }
+  }
+
+  .success{
+    background-color: $primary-green;
+    border-radius:8px;
+    border:2px solid $secondary-green;
+    color: $secondary-green;
+    a{
+      color: $tertiary-green;
+    }
+  }
+}

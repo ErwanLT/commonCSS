@@ -10,30 +10,28 @@ body {
     line-height: 1.5;
 
     background-color: #e5e5e5;
-}
 
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
 
-.navbar ul li {
-    float: left;
-    border-right: 1px solid #555;
-    box-sizing: border-box;
-}
+        li{
+            float: left;
+            border-right: 1px solid #555;
+            box-sizing: border-box;
 
-.navbar ul li a {
-    color: #212529;;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    padding: .5rem 1rem;
-}
-
-/* Change the link color to #111 (black) on hover */
-.navbar ul li a:hover {
-    background-color: $primary-blue;
+            a{
+                color: #212529;;
+                text-align: center;
+                text-decoration: none;
+                display: block;
+                padding: .5rem 1rem;
+            };
+            a:hover{
+                background-color: $primary-blue;
+            }
+        }
+    }
 }
