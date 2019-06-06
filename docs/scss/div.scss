@@ -1,17 +1,24 @@
 @import "common";
 
 div {
-  .notice{
+  .info,
+  .warning,
+  .alert,
+  .success{
     padding: 0;
     width: 100%;
     text-align: left;
+    border-radius:8px;
     margin-bottom: 5px;
+    border:2px solid;
+    a{
+      text-decoration: underline;
+    }
   }
 
   .info {
     background-color: $secondary-blue;
-    border-radius:8px;
-    border:2px solid $primary-blue;
+    border-color: $primary-blue;
     color: $primary-blue;
     a {
       color: $tertiary-blue;
@@ -20,8 +27,7 @@ div {
 
   .warning {
     background-color: $primary-orange;
-    border-radius:8px;
-    border:2px solid $secondary-orange;
+    border-color: $secondary-orange;
     color: $secondary-orange;
     a {
       color: $tertiary-orange;
@@ -30,8 +36,7 @@ div {
 
   .alert {
     background-color: $primary-red;
-    border-radius:8px;
-    border:2px solid $secondary-red;
+    border-color: $secondary-red;
     color: $secondary-red;
     a {
       color: $tertiary-red;
@@ -40,8 +45,7 @@ div {
 
   .success{
     background-color: $primary-green;
-    border-radius:8px;
-    border:2px solid $secondary-green;
+    border-color: $secondary-green;
     color: $secondary-green;
     a{
       color: $tertiary-green;

@@ -11,16 +11,17 @@ body {
   user-select: none;
   /* Standard syntax */ }
 
+.title-1,
+.title-2 {
+  font-weight: lighter;
+  text-align: left; }
+
 .title-1 {
   font-size: 32px;
   color: #00a1ff;
-  padding: 5px;
-  font-weight: lighter;
-  text-align: left; }
+  padding: 5px; }
 
 .title-2 {
   font-size: 28px;
   color: #7aceff;
-  padding: 10px;
-  font-weight: lighter;
-  text-align: left; }
+  padding: 10px; }
